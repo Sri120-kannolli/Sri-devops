@@ -1,2 +1,0 @@
-# Sri-devops
-devops code

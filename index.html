@@ -1,0 +1,168 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srini-Fashions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Srini-Fashions</div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-container">
+            <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Premium Men’s Fashion</h1>
+            <p>Upgrade your style with the latest collections.</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>🚚 Fast Delivery</h3>
+            <p>Delivery within 2-4 business days.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>💳 Secure Payment</h3>
+            <p>100% secure online transactions.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔄 Easy Returns</h3>
+            <p>7-day easy return policy.</p>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <h2>Trending Collections</h2>
+
+        <div class="products-grid" id="products-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop" alt="Tshirt">
+                <h3>Premium T-Shirt</h3>
+                <p>₹999</p>
+                <button onclick="addToCart('Premium T-Shirt',999)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=1200&auto=format&fit=crop" alt="Jeans">
+                <h3>Stylish Jeans</h3>
+                <p>₹1,799</p>
+                <button onclick="addToCart('Stylish Jeans',1799)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop" alt="Shoes">
+                <h3>Running Shoes</h3>
+                <p>₹2,499</p>
+                <button onclick="addToCart('Running Shoes',2499)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" alt="Jacket">
+                <h3>Winter Jacket</h3>
+                <p>₹3,499</p>
+                <button onclick="addToCart('Winter Jacket',3499)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+        <h2>Delivery Information</h2>
+
+        <div class="delivery-container">
+            <div class="delivery-card">
+                <h3>Standard Delivery</h3>
+                <p>Delivery in 3-5 Days</p>
+            </div>
+
+            <div class="delivery-card">
+                <h3>Express Delivery</h3>
+                <p>Delivery in 24 Hours</p>
+            </div>
+
+            <div class="delivery-card">
+                <h3>Order Tracking</h3>
+                <p>Track your shipment live.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Srini-Fashions</h2>
+        <p>
+            Srini-Fashions is a modern men’s fashion store focused on premium quality,
+            stylish collections, fast delivery, and customer satisfaction.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Srini-Fashions | All Rights Reserved</p>
+    </footer>
+
+    
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+
+            <ul id="cart-items"></ul>
+
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="close-btn" onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

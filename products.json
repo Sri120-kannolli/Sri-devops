@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": 1,
+    "name": "Premium T-Shirt",
+    "price": 999,
+    "category": "Tshirts"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Jeans",
+    "price": 1799,
+    "category": "Jeans"
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 2499,
+    "category": "Shoes"
+  },
+  {
+    "id": 4,
+    "name": "Winter Jacket",
+    "price": 3499,
+    "category": "Jackets"
+  }
+]

@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: Sri-Deploy
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: deploy
+  template:
+    metadata:
+      name: Sri-Pod
+      labels:
+        app: deploy
+        ENV: test
+    spec:
+      Containers:
+      - name: Sri-Container
+        image: sheenusk/shree
+        ports:
+        - containerPort: 8080
+  
